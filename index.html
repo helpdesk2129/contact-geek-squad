@@ -4,31 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Geek Squad® Support Guide | Tech Help & Alternatives</title>
-  <meta name="description" content="Looking for Geek Squad support? Get fast, reliable independent tech support for computers, printers, email, and networks. Call now for immediate help.">
+  <meta name="description" content="Looking for Geek Squad support? Learn your options and get fast, reliable help from independent technicians for computers, printers, email, and networks.">
 
   <!-- Basic Call Tracking (replace with Google Ads / GTM later) -->
   <script>
     function trackCall(source) {
-      console.log("Call click from: " + source);
+      try { console.log("Call click from: " + source); } catch(e){}
     }
   </script>
 
-  <!-- Schema for trust -->
+  <!-- Structured Data for trust/eligibility -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Independent Tech Support",
+    "@type": "Organization",
+    "name": "Geek Squad Support Guide",
+    "url": "https://example.com",
     "telephone": "+1-844-530-3111",
     "areaServed": "US",
-    "serviceType": "Technical Support"
+    "sameAs": []
   }
   </script>
 
   <style>
     body { margin:0; font-family: Arial, sans-serif; background:#000; color:#fff; line-height:1.7; }
     header { background:#000; padding:15px 30px; display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid #ffcc00; position:sticky; top:0; z-index:1000; }
-    header h1 { color:#ffcc00; font-size:20px; }
+    header h1 { color:#ffcc00; font-size:20px; margin:0; }
     nav a { color:#fff; margin-left:20px; text-decoration:none; }
     nav a:hover { color:#ffcc00; }
     section { padding:60px 20px; max-width:1100px; margin:auto; }
@@ -39,29 +40,20 @@
     .box { background:#111; padding:25px; border-radius:10px; margin:15px 0; border-left:4px solid #ffcc00; }
     footer { text-align:center; padding:20px; background:#000; color:#aaa; border-top:2px solid #ffcc00; }
     .disclaimer { font-size:13px; color:#bbb; margin-top:10px; }
+    .small { font-size:14px; color:#ccc; }
 
     /* Sticky mobile call bar */
-    .sticky-call {
-      position:fixed;
-      bottom:0;
-      width:100%;
-      background:#ffcc00;
-      text-align:center;
-      padding:15px;
-      z-index:999;
-    }
-    .sticky-call a {
-      color:#000;
-      font-weight:bold;
-      text-decoration:none;
-      font-size:18px;
-    }
+    .sticky-call { position:fixed; bottom:0; width:100%; background:#ffcc00; text-align:center; padding:15px; z-index:999; }
+    .sticky-call a { color:#000; font-weight:bold; text-decoration:none; font-size:18px; }
+
+    /* Simple grid */
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:16px; }
   </style>
 </head>
 <body>
 
 <header>
-<h1>Geek Squad® Support Guide</h1>
+  <h1>Geek Squad® Support Guide</h1>
   <nav>
     <a href="#services">Services</a>
     <a href="#faq">FAQ</a>
@@ -71,62 +63,98 @@
 
 <section class="hero">
   <h2>Looking for Geek Squad® Support?</h2>
-  <p>Get immediate help from certified technicians for computer repair, printer issues, email setup, virus removal, and more.</p>
+  <p>Understand your options and get fast help from independent technicians for computer repair, printer issues, email setup, virus removal, and more.</p>
   <a href="tel:+18445303111" class="btn" onclick="trackCall('hero')">Call Now: +1 844-530-3111</a>
-  <p class="disclaimer">
-Independent third-party support resource. Not affiliated with Geek Squad® or Best Buy.
-</p>
+  <p class="disclaimer">Independent third-party support resource. Not affiliated with Geek Squad® or Best Buy.</p>
 </section>
 
 <section>
   <h2>Common Issues We Fix</h2>
-  <div class="box">Slow computer, freezing, or crashing systems</div>
-  <div class="box">Printer not printing or offline errors</div>
-  <div class="box">Email not working (Outlook, Gmail, etc.)</div>
-  <div class="box">Virus, malware, and security issues</div>
-  <div class="box">Wi-Fi connectivity and router setup</div>
+  <div class="grid">
+    <div class="box">Slow computer, freezing, or crashing systems</div>
+    <div class="box">Printer not printing or offline errors</div>
+    <div class="box">Email not working (Outlook, Gmail, etc.)</div>
+    <div class="box">Virus, malware, and security issues</div>
+    <div class="box">Wi‑Fi connectivity and router setup</div>
+    <div class="box">Software install, updates, and errors</div>
+  </div>
 </section>
 
 <section id="services">
   <h2>Our Services</h2>
-  <div class="box"><strong>Computer Repair:</strong> Diagnose and fix performance issues fast.</div>
-  <div class="box"><strong>Virus Removal:</strong> Clean and secure your system safely.</div>
-  <div class="box"><strong>Email Support:</strong> Fix login, sync, and sending issues.</div>
-  <div class="box"><strong>Printer Support:</strong> Resolve setup and printing errors.</div>
-  <div class="box"><strong>Network Setup:</strong> Secure and optimize your internet.</div>
+  <div class="grid">
+    <div class="box"><strong>Computer Repair:</strong> Diagnose and fix performance issues fast.</div>
+    <div class="box"><strong>Virus Removal:</strong> Clean and secure your system safely.</div>
+    <div class="box"><strong>Email Support:</strong> Fix login, sync, and sending issues.</div>
+    <div class="box"><strong>Printer Support:</strong> Resolve setup and printing errors.</div>
+    <div class="box"><strong>Network Setup:</strong> Secure and optimize your internet.</div>
+    <div class="box"><strong>Device Setup:</strong> New PC, laptop, and peripherals setup.</div>
+  </div>
 </section>
 
 <section>
   <h2>Why Customers Call Us</h2>
-  <div class="box">✔ Fast response in minutes</div>
-  <div class="box">✔ Certified technicians</div>
-  <div class="box">✔ No long wait times</div>
-  <div class="box">✔ Support for multiple devices</div>
+  <div class="grid">
+    <div class="box">✔ Fast response in minutes</div>
+    <div class="box">✔ Certified technicians</div>
+    <div class="box">✔ No long wait times</div>
+    <div class="box">✔ Support for multiple devices</div>
+  </div>
 </section>
 
 <section>
   <h2>Real Customer Feedback</h2>
-  <div class="box">“Fixed my laptop in 20 minutes. Very helpful support!”</div>
-  <div class="box">“Printer issue solved quickly. Saved me hours.”</div>
-  <div class="box">“Much faster than waiting for other support services.”</div>
+  <div class="grid">
+    <div class="box">“Fixed my laptop in 20 minutes. Very helpful support!”</div>
+    <div class="box">“Printer issue solved quickly. Saved me hours.”</div>
+    <div class="box">“Much faster than waiting for other support services.”</div>
+  </div>
 </section>
 
 <section id="faq">
   <h2>Frequently Asked Questions</h2>
-  <div class="box"><strong>Are you Geek Squad?</strong><br>No. We are an independent support provider.</div>
+  <div class="box"><strong>Are you Geek Squad?</strong><br>No. We are an independent support resource and not affiliated with Geek Squad® or Best Buy.</div>
   <div class="box"><strong>How fast is support?</strong><br>Most issues are resolved in one call.</div>
-  <div class="box"><strong>Is it secure?</strong><br>Yes, we follow strict safety protocols.</div>
+  <div class="box"><strong>Is it secure?</strong><br>We follow standard safety practices during support sessions.</div>
 </section>
 
 <section id="contact" class="hero">
   <h2>Call Now for Immediate Assistance</h2>
   <p>Speak directly with a technician and fix your issue today.</p>
   <a href="tel:+18445303111" class="btn" onclick="trackCall('bottom')">Call Now: +1 844-530-3111</a>
+  <p class="small">Business Hours: 24/7 | Service Area: United States</p>
 </section>
 
-<footer>
- <p>&copy; 2026 Geek Squad® Support Guide</p>
-  <p class="disclaimer">Disclaimer: Geek Squad® is a registered trademark. We are not affiliated or endorsed by Geek Squad or Best Buy.</p>
+<section>
+  <h2>Business Information</h2>
+  <div class="box">
+    <p><strong>Business Name:</strong> Geek Squad® Support Guide</p>
+    <p><strong>Phone:</strong> +1 844-530-3111</p>
+    <p><strong>Service Area:</strong> United States</p>
+    <p class="small">This is an informational support guide connecting users with independent technicians.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Policies</h2>
+  <div class="box">
+    <p><strong>Privacy Policy</strong></p>
+    <p class="small">We respect your privacy. We do not sell personal information. Any data shared during support is used only to assist with your request and improve service quality.</p>
+  </div>
+  <div class="box">
+    <p><strong>Terms & Conditions</strong></p>
+    <p class="small">By using this site, you agree to receive independent third-party technical assistance. We do not claim affiliation with any brand mentioned.</p>
+  </div>
+</section>
+
+  <footer>
+  <p>&copy; 2026 Geek Squad® Support Guide</p>
+  <p class="disclaimer">Disclaimer: Geek Squad® is a registered trademark. We are not affiliated with or endorsed by Geek Squad or Best Buy.</p>
+  <p class="small">
+    <a href="privacy.html" style="color:#ffcc00;">Privacy Policy</a> |
+    <a href="terms.html" style="color:#ffcc00;">Terms & Conditions</a> |
+    <a href="contact.html" style="color:#ffcc00;">Contact</a>
+  </p>
 </footer>
 
 <div class="sticky-call">
@@ -135,3 +163,4 @@ Independent third-party support resource. Not affiliated with Geek Squad® or Be
 
 </body>
 </html>
+
